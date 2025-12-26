@@ -340,10 +340,8 @@ _Configuration is free to practice, but note that it uses port 80._
 **Answer:**
 
 - Screenshot  
-  - Web-Server 1  
-  ![image](/images/4_1.png)
-  - Web-Server 2
-  ![image](/images/4_2.png)
+<img width="692" height="407" alt="image" src="https://github.com/user-attachments/assets/90632450-3d7a-4d8a-84d3-8111e0eb93e2" />
+
 
 - Explanation
 
