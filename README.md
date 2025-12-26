@@ -51,8 +51,6 @@ _Also include the subnet table and diagram in the lab report._
 
   Using that information, we can start to calculate on how to divide the subnets using a tree. We take the subnet with the largest label and start to divide from there.
 
-  ![tree](/images/1_2.png)
-
   | Subnet | Hosts | Label | Network ID | Netmask | Broadcast Address |
   | ------ | ----- | ----- | ---------- | ------- | ----------------- |
   | A1 | 115 | /25 | 10.86.3.0 | 255.255.255.128 | 10.86.3.127 |
