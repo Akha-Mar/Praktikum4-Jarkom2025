@@ -31,7 +31,7 @@ _Also include the subnet table and diagram in the lab report._
 
 - Explanation
 
-  To calculate the subnetting for each subnet group, we need to consider the amount of hosts that use said subnet. To do so, we refer to the table of lengths and addresses.
+  Untuk menghitung subnetting untuk setiap grup subnet, kita perlu mempertimbangkan jumlah host yang menggunakan subnet tersebut. Untuk melakukannya, kita merujuk pada tabel lenghts and addresses.
   
   ![jarkomsubnet](https://github.com/arsitektur-jaringan-komputer/Modul-Jarkom/blob/master/Modul-4/assets/1.png?raw=true)  
   
@@ -49,7 +49,7 @@ _Also include the subnet table and diagram in the lab report._
   | A10 | 18 | 27/ |
   | **Total** | **648** | **22/** |
 
-  Using that information, we can start to calculate on how to divide the subnets using a tree. We take the subnet with the largest label and start to divide from there.
+  Dengan itu, kita dapat mulai menghitung cara membagi subnet menggunakan pohon. Kita ambil subnet dengan label terbesar dan mulai membagi dari itu.
 
   | Subnet | Hosts | Label | Network ID | Netmask | Broadcast Address |
   | ------ | ----- | ----- | ---------- | ------- | ----------------- |
@@ -65,7 +65,7 @@ _Also include the subnet table and diagram in the lab report._
   | A10 | 18 | /27 | 10.86.3.192 | 255.255.255.224 | 10.86.3.223 |
   | **Total** | **648** | **/22** |  |  |  |
 
-  After reorganizing all of the network IDs for each subnet, we can start to statically allocate the IPs of each node.
+  Setelah mengatur ulang semua Network ID untuk setiap subnet, kita dapat mulai mengalokasikan IP setiap node secara statis.
   ### Routers
   - **router-2**
     ```
@@ -274,7 +274,7 @@ _Also include the subnet table and diagram in the lab report._
 
 - Explanation
 
-  Router-2 was already connected to a NAT instance.
+  Router-2 sudah terhubung ke NAT instance.
 
 <br>
 
@@ -294,17 +294,17 @@ _Ensure all existing nodes can access the internet._
 
 - Explanation
 
-  Task 3 can be achieved by configuring dynamic routing on each router. I chose OSPF for this feat. We can start by enabling it on `/etc/frr/daemons`
+  Task 3 dapat dicapai dengan mengkonfigurasi dynamic routing pada setiap router. Saya memilih OSPF dan kita dapat mulai dengan mengaktifkannya di `/etc/frr/daemons`
   ```diff
   - ospfd=no
   + ospfd=yes
   ```
-  After which, you can start up the service by running this.
+  After which, we can start up the service by running this.
   ```sh
   /usr/lib/frr/frrinit.sh start
   ```
 
-  We can now configure dynamic routing now. We start from the center router(`router-2`). Since our subnet can be generalized into /22, we will use that.
+  Kita sekarang dapat configure dynamic routing. Kita mulai dari router-2.
   ```sh
   vtysh
     conf t
