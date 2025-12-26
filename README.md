@@ -290,8 +290,6 @@ _Ensure all existing nodes can access the internet._
 
 - Screenshot
 
-  ![image](/images/3_2.png)
-
 - Explanation
 
   Task 3 dapat dicapai dengan mengkonfigurasi dynamic routing pada setiap router. Saya memilih OSPF dan kita dapat mulai dengan mengaktifkannya di `/etc/frr/daemons`
@@ -329,7 +327,7 @@ _Ensure all existing nodes can access the internet._
   exit
   ```
 
-  ![vtysh](/images/3_1.png)
+<img width="577" height="185" alt="image" src="https://github.com/user-attachments/assets/a93652d5-03ac-4407-9246-473401b2384f" />
 
 
 <br>
