@@ -289,7 +289,7 @@ _Ensure all existing nodes can access the internet._
 **Answer:**
 
 - Screenshot
-
+  <img width="577" height="185" alt="image" src="https://github.com/user-attachments/assets/a93652d5-03ac-4407-9246-473401b2384f" />
 - Explanation
 
   Task 3 dapat dicapai dengan mengkonfigurasi dynamic routing pada setiap router. Saya memilih OSPF dan kita dapat mulai dengan mengaktifkannya di `/etc/frr/daemons`
@@ -297,7 +297,7 @@ _Ensure all existing nodes can access the internet._
   - ospfd=no
   + ospfd=yes
   ```
-  After which, we can start up the service by running this.
+  Setelah itu, kita dapat memulainya dengan menjalankan ini.
   ```sh
   /usr/lib/frr/frrinit.sh start
   ```
@@ -315,7 +315,7 @@ _Ensure all existing nodes can access the internet._
   exit
   ```
 
-  After which, we can continue with the rest of the routers (`router-1`, `router-3`, `router-4`, and `router-5`).
+  Setelah itu, kita dapat lanjut dengan router 1, 3, 4, dan 5.
   ```sh
   vtysh
     conf t
@@ -326,9 +326,6 @@ _Ensure all existing nodes can access the internet._
     wr
   exit
   ```
-
-<img width="577" height="185" alt="image" src="https://github.com/user-attachments/assets/a93652d5-03ac-4407-9246-473401b2384f" />
-
 
 <br>
 
