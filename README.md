@@ -270,11 +270,11 @@ _Also include the subnet table and diagram in the lab report._
 
 - Screenshot
 
-  ![2](/images/2.png)
+<img width="567" height="178" alt="image" src="https://github.com/user-attachments/assets/d44adb6d-f68f-4e3d-bdb2-a05bc78a155f" />
 
 - Explanation
 
-  Doing this was quite simple as router-2 was already connected to a NAT instance.
+  Router-2 was already connected to a NAT instance.
 
 <br>
 
