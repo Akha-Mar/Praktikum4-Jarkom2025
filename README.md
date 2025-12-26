@@ -7,11 +7,12 @@
 
 ## Put your topology config image here!
 
+<img width="1133" height="677" alt="image" src="https://github.com/user-attachments/assets/cce31488-0936-494b-a654-643cfb234aa0" />
 
 
 ## Put your GNS3 Project file here!
 
-
+https://drive.google.com/file/d/1fAI2ny3_ToWrw6WUHhaASE6CSXjNdH90/view?usp=sharing
 
 <br>
 
@@ -27,8 +28,6 @@ _Also include the subnet table and diagram in the lab report._
 **Answer:**
 
 - Screenshot
-
-  ![1](/images/1_1.png)
 
 - Explanation
 
