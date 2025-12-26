@@ -33,6 +33,7 @@ _Also include the subnet table and diagram in the lab report._
 - Explanation
 
   To calculate the subnetting for each subnet group, we need to consider the amount of hosts that use said subnet. To do so, we refer to the table of lengths and addresses.
+  
   ![jarkomsubnet](https://github.com/arsitektur-jaringan-komputer/Modul-Jarkom/blob/master/Modul-4/assets/1.png?raw=true)  
   
   | Subnet | Hosts | Label |
