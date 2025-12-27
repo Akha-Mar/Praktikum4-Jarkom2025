@@ -499,7 +499,7 @@ _Configuration is free to practice, but note that it uses port 80._
 - Screenshot
   <img width="906" height="148" alt="image" src="https://github.com/user-attachments/assets/e1354791-cf7d-41b7-b53e-1137f379851c" />
 
-  <img width="686" height="412" alt="image" src="https://github.com/user-attachments/assets/9d4b17e6-b9f1-47dd-88f0-12dfa6bed0bd" />
+  <img width="673" height="782" alt="image" src="https://github.com/user-attachments/assets/5d93b745-17f5-40dc-bf69-f04cd8f7cdca" />
 
 - Explanation
 
