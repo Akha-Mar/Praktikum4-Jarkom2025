@@ -46,8 +46,8 @@ _Also include the subnet table and diagram in the lab report._
   | A7 | 450 | /23 |
   | A8 | 2 | /30 |
   | A9 | 12 | /28 |
-  | A10 | 18 | 27/ |
-  | **Total** | **648** | **22/** |
+  | A10 | 18 | /27 |
+  | **Total** | **648** | **/22** |
 
   Dengan itu, kita dapat mulai menghitung cara membagi subnet menggunakan pohon. Kita ambil subnet dengan label terbesar dan mulai membagi dari itu.
 
