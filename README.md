@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/oYnIPZ_t)
+<img width="962" height="303" alt="image" src="https://github.com/user-attachments/assets/b52d1147-f634-4afe-9fbd-22c2a0c5b2d4" />[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/oYnIPZ_t)
 | Name           | NRP        | Kelas     |
 | ---            | ---        | ----------|
 | Akhamar Elnath Chaniago | 5025231281 | B |
@@ -345,8 +345,8 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Explanation
 
-  Deploying this can be done by simply editing the `/var/www/html/index.debian-default.html` and starting nginx by running this command.
-  `/var/www/html/index.debian-default.html`
+  Deploying dapat dilakukan dengan mengedit `/var/www/html/index.debian-default.html` dan juga run command `/var/www/html/index.debian-default.html`.
+  
   ```html
   <!DOCTYPE html>
   <html lang="en">
@@ -411,10 +411,12 @@ _Configuration is free to practice, but note that it uses port 80._
 - Screenshot
 
   <img width="916" height="138" alt="image" src="https://github.com/user-attachments/assets/21b2ab33-4d35-4806-9104-9c0ce2534842" />
+  <img width="370" height="54" alt="image" src="https://github.com/user-attachments/assets/3bd73cc0-e225-4f4d-bec1-5b17ad6fbda0" />
+  <img width="624" height="32" alt="image" src="https://github.com/user-attachments/assets/a5ed3c9f-f750-45e3-b738-b846eeb0476a" />
 
 - Explanation
 
-  We can do this by blocking packets that fit our criteria using iptables. To further simplify this process, we can implement this on `router-5`.
+  Kita dapat melakukan ini dengan memblokir paket yang sesuai dengan kriteria kita menggunakan iptables. Untuk lebih mempermudah proses, kita dapat mengimplementasikannya pada `router-5`.
 
   ```sh
   apt install iptables -y
@@ -422,15 +424,15 @@ _Configuration is free to practice, but note that it uses port 80._
   iptables -A FORWARD -p tcp -d 10.86.0.0/23 -dport 4444 -j DROP
   ```
 
-  After which, we can try and test whether this works or not using netcat. First we setup a listener on one of the HR nodes.
+  Setelah itu, kita dapat mencoba dan test jika berhasil apa tidak dengan menggunakan netcat. Kita setup listener pada salah satu node HR.
   ```sh
   nc -lvp 1337
   ```
-  And then, we can try and connect from a node outside of the HR subnet to test it.
+  Setelah itu, kita dapat coba connect dari node yang ada di luar HR subnet untuk mengetesnya.
   ```
   nc -v 10.86.0.2 1337
   ```
-  We can see that the attempt doesn't connect both nodes and end up timing out, which validates the blocking.
+  Kita dapat lihat bahwa kedua nodes timeout karena blocking tersebut.
 
 <br>
 
@@ -449,7 +451,7 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Explanation
 
-  Generally speaking, SSH connections are done via port 22. Thus, we need to configure that specifically that port's access clearance for IPs belonging to the IT System Subnet (`10.86.3.0/25`). We can attempt this on `router-4`.
+  In general, SHH connections dilakukan melalui port 22. Itu mengapa kita perlu mengkonfigurasi akses port tersebut secara khusus untuk IP yang termasuk dalam IT System Subnet(`10.86.3.0/25`). Kita dapat coba ini pada `router-4`.
   ```sh
   apt install iptables -y
   iptables -A FORWARD -o eth1 -p tcp -s 10.86.3.0/25 --dport 22 -j ACCEPT
@@ -475,7 +477,7 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Explanation
 
-  Similarly to the previous tasks, we can implement this by adding a firewall to `router-3`. This can be done by running the following code.
+  Kita dapat implement ini dengan cara menambahkan firewall pada `router-3`.
   ```sh
   apt install iptables -y
   iptables -A FORWARD -o eth1 -p tcp -m multiport --dports 80,443 -m time --timestart 07:00 --timestop 22:00 --weekdays Mon,Tue,Wed,Thu,Fri,Sat -j ACCEPT
@@ -496,10 +498,13 @@ _Configuration is free to practice, but note that it uses port 80._
 **Answer:**
 
 - Screenshot
+  <img width="906" height="148" alt="image" src="https://github.com/user-attachments/assets/e1354791-cf7d-41b7-b53e-1137f379851c" />
+
+  <img width="686" height="412" alt="image" src="https://github.com/user-attachments/assets/9d4b17e6-b9f1-47dd-88f0-12dfa6bed0bd" />
 
 - Explanation
 
-  To implement this, we can add the constraint onto `router-4` and target the web server's network interface. You can add this to your existing configuration.
+  Untuk implementasi ini, kita dapat menambahkan constraint kepada `router-4` dan target network interface web server.
   ```sh
   iptables -F
 
@@ -528,11 +533,11 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  ![image](/images/9.png)
+  <img width="927" height="119" alt="image" src="https://github.com/user-attachments/assets/0b864c5e-34b1-4b85-8bfa-22f42c139f63" />
 
 - Explanation
 
-  For this task, i will be chosing the HR subnets. We can do this by configuring `router-5`. Additional note to reset / flush your previous configurations before adding new ones to layer them properly.
+  Untuk task ini, saya akan menggunakan HR subnets. Kita dapat lakukan ini dengan configure `router-5`.
   ```sh
   iptables -F
 
@@ -557,15 +562,17 @@ _Configuration is free to practice, but note that it uses port 80._
 - Screenshot
 
   - DB Servers Subnet (`router-3`)
-    ![image](/images/10_1.png)
+    <img width="962" height="303" alt="image" src="https://github.com/user-attachments/assets/e564d819-98f5-448d-afdf-9805d763a168" />
+
   - Web Servers Subnet (`router-4`)
-    ![image](/images/10_2.png)
+    <img width="969" height="288" alt="image" src="https://github.com/user-attachments/assets/dcc517b7-ac63-4fae-a7bb-9ee2dff50e20" />
+
   - HR Systems Subnet (`router-5`)
-    ![image](/images/10_3.png)
+    <img width="1318" height="222" alt="image" src="https://github.com/user-attachments/assets/a3c86cc4-4c77-40cf-9aed-498d089d3aaf" />
 
 - Explanation
 
-  Enabling logging for all the routers we added iptables configurations are simple. For each drop we attempt, we add a `LOG` command beforehand. Do this for all routers affected (`router-3`, `router-4`, `router-5`).
+  Untuk semua drop yang kita lakukan, kita tambahkan "LOG" command sebelum itu. Lakukan ini untuk semua router yang terpengaruh (`router-3`, `router-4`, `router-5`).
 
   - `router-3`: DB (Tasks 7)
     ```sh
