@@ -340,7 +340,7 @@ _Configuration is free to practice, but note that it uses port 80._
 **Answer:**
 
 - Screenshot  
-<img width="692" height="407" alt="image" src="https://github.com/user-attachments/assets/90632450-3d7a-4d8a-84d3-8111e0eb93e2" />
+  <img width="692" height="407" alt="image" src="https://github.com/user-attachments/assets/90632450-3d7a-4d8a-84d3-8111e0eb93e2" />
 
 
 - Explanation
@@ -410,7 +410,7 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  ![image](/images/5.png)
+  <img width="916" height="138" alt="image" src="https://github.com/user-attachments/assets/21b2ab33-4d35-4806-9104-9c0ce2534842" />
 
 - Explanation
 
@@ -444,7 +444,8 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  ![images](/images/6.png)
+  <img width="912" height="155" alt="image" src="https://github.com/user-attachments/assets/629a4720-f0f0-408c-a22f-18c16ffb9d23" />
+
 
 - Explanation
 
