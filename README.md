@@ -497,8 +497,6 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  ![image](/images/8.png)
-
 - Explanation
 
   To implement this, we can add the constraint onto `router-4` and target the web server's network interface. You can add this to your existing configuration.
