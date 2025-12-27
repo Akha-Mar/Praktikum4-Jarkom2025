@@ -471,7 +471,7 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Screenshot
 
-  ![image](/images/7.png)
+<img width="957" height="172" alt="image" src="https://github.com/user-attachments/assets/9d8d99f7-700d-486c-9e25-45dc6a21a270" />
 
 - Explanation
 
