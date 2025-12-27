@@ -1,4 +1,4 @@
-<img width="962" height="303" alt="image" src="https://github.com/user-attachments/assets/b52d1147-f634-4afe-9fbd-22c2a0c5b2d4" />[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/oYnIPZ_t)
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/oYnIPZ_t)
 | Name           | NRP        | Kelas     |
 | ---            | ---        | ----------|
 | Akhamar Elnath Chaniago | 5025231281 | B |
