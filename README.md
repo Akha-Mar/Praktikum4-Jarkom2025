@@ -345,7 +345,7 @@ _Configuration is free to practice, but note that it uses port 80._
 
 - Explanation
 
-  Deploying dapat dilakukan dengan mengedit `/var/www/html/index.debian-default.html` dan juga run command `/var/www/html/index.debian-default.html`.
+  Deploying dapat dilakukan dengan mengedit `/var/www/html/index.nginx-debian.html` dan juga run command `/var/www/html/index.nginx-debian.html`.
   
   ```html
   <!DOCTYPE html>
